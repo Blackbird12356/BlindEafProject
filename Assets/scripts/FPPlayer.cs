@@ -1,9 +1,10 @@
+using Fusion;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(F))]
-public class FPPlayer : MonoBehaviour
+public class FPPlayer : NetworkBehaviour
 {
     [Header("Components")]
     [SerializeField] F FPController;
